@@ -1,0 +1,714 @@
+@font-face {
+  font-family: 'headerFont';
+  src: url(../fonts/FredokaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'bodyFont';
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: 'extraFont';
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: bodyFont;
+  background-color: #000000;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+/* ============================== Header Page ============================== */
+
+.header {
+  background: black url(../images/website-background.jpg) no-repeat top center;
+  background-size: cover;
+  font-family: extraFont;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.head {
+  text-align: center;
+  color: #ffffff;
+}
+
+.head h1{
+  font-family: headerFont;
+  color: coral;
+  font-size: 3.5em;
+  text-shadow: 2px 2px 2px #fff5ee;
+}
+
+.head hr{
+  height: 4px;
+  border-width: 0;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+  width: 65%;
+}
+
+.head .btn {
+  color: coral;
+  border: 1px solid coral;
+  margin: 5px;
+}
+
+.head .btn:hover {
+  background-color: coral;
+  color: white;
+}
+
+.head .social {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.head .social li {
+  display: inline;
+  list-style: none;
+  padding: 0 7px;
+  font-size: 26px;
+}
+
+.head .social li a{
+  color: white;
+}
+
+.head .social li a:hover{
+  color: #ff8f43;
+}
+
+/* ========================================================================= */
+
+/* ============================ Navigation Bar ============================= */
+.navbar {
+  background-color: rgba(10, 32, 53, 1); 
+  font-family: extraFont;
+  position: fixed;
+  top; 0;
+  min-width: 100%;
+}
+
+.navbar-brand {
+  font-family: headerFont;
+  color: coral;
+}
+
+button.navbar-toggler {
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.navbar button[aria-expanded="true"] > span.expand {
+  display: none;
+}
+
+.navbar button[aria-expanded="false"] > span.close {
+  display: none;
+}
+
+.toggle-button{
+  font-size: 20px;
+  color: white;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid coral;
+  border-radius: 5%;
+  color: #ff8f43;
+}
+
+.nav-link:active {
+  color: coral;
+}
+
+.active {
+  color: coral;
+}
+
+/* ========================================================================= */
+
+/* ============================= About Me Page ============================= */
+
+section {
+  padding: 120px 0;
+}
+
+.about {
+  background-color: #ffffff;
+}
+
+.tabs-con {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  font-family:  extraFont;
+  color: coral;
+  font-size: 2.4em;
+}
+
+
+.about h3 {
+  font-family:  extraFont;
+  color: coral;
+  text-align: center;
+}
+
+.tabs-line {
+  height: 3px;
+  border-width: 0;
+  color: coral;
+  background-color: coral;
+  border-radius: 5%;
+  width: 100px;
+}
+
+.selfie-con {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.selfie {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 2px solid coral;
+}
+
+.par-con{
+  margin: 20px;
+}
+
+.par-con p {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.italize {
+  font-style: italic;
+  color: coral;
+  font-family: extraFont;
+}
+
+.about li {
+  font-family:  extraFont;
+  color: coral;
+  font-style: italic;
+}
+
+/* ========================================================================= */
+
+/* ============================== Resume Page ============================== */
+
+.resume {
+  background-color: #d3d3d3;
+}
+
+.resume h3 {
+  font-family: extraFont;
+  color: coral;
+}
+
+.resume h5 {
+  font-family: extraFont;
+}
+
+.resume-line {
+  height: 1px;
+  border-width: 0;
+  color: coral;
+  background-color: coral;
+  border-radius: 5%;
+}
+
+.resume p {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.resume-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.resume-pic:hover {
+  opacity: 0.5;
+}
+
+.resume-info-head {
+  margin: 40px 0 20px;
+  padding: 0;
+}
+
+.resume-info-body-last {
+  margin-bottom: 40px;
+}
+
+.col-md-11 {
+  font-family: extraFont;
+  color: #4d4e4f;
+}
+/* ========================================================================= */
+
+/* ============================= Projects Page ============================= */
+
+.projects {
+  background-color: #ffffff;
+}
+
+.projects h5 {
+  font-family: extraFont;
+  color: coral;
+}
+
+.prj-div p {
+  font-size: 0.8em;
+}
+
+.prj-pic {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #0a2035;
+  border-radius: 10%;
+  margin: 10px 0;
+}
+
+.prj-pic:hover {
+  opacity: 0.5;
+}
+
+.prj-div {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pjp-p {
+  height: 200px;
+}
+
+.projects .btn {
+  color: coral;
+  border: 1px solid coral;
+  margin: 5px;
+}
+
+.projects .my-btn:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.projects .btn: hover {
+  background-color: coral;
+  color: white;
+}
+
+.projects .wd {
+  background-color: #e6070e;
+  color: white;
+  border: #e6070e;
+}
+
+.projects .wd:hover{
+  background-color: #e6070e;
+  color: white;
+  border: #e6070e;
+  cursor: text;
+}
+
+.projects .html {
+  background-color: #39cc19;
+  color: white;
+  border: #39cc19;
+}
+
+.projects .html:hover{
+  background-color: #39cc19;
+  color: white;
+  border: #39cc19;
+  cursor: text;
+}
+
+.projects .js {
+  background-color: #cf3797;
+  color: white;
+  border: #cf3797;
+}
+
+.projects .js:hover{
+  background-color: #cf3797;
+  color: white;
+  border: #cf3797;
+  cursor: text;
+}
+
+.projects .itunes {
+ background-color: #5d35f3;
+  color: white;
+  border: #5d35f3;
+}
+
+.projects .itunes:hover{
+  background-color: #5d35f3;
+  color: white;
+  border: #5d35f3;
+  cursor: text;
+}
+
+.projects .gd {
+  background-color: #e6560e;
+  color: white;
+  border: #e6560e;
+}
+
+.projects .gd:hover{
+  background-color: #e6560e;
+  color: white;
+  border: #e6560e;
+  cursor: text;
+}
+
+.projects .p5 {
+  background-color: #ae4274;
+  color: white;
+  border: #ae4274;
+}
+
+.projects .p5:hover{
+  background-color: #ae4274;
+  color: white;
+  border: #ae4274;
+  cursor: text;
+}
+
+.projects .fb {
+  background-color: #e6910e;
+  color: white;
+  border: #e6910e;
+}
+
+.projects .fb:hover{
+  background-color: #e6910e;
+  color: white;
+  border: #e6910e;
+  cursor: text;
+}
+
+.projects .ai {
+  background-color: #67dcf4;
+  color: white;
+  border: #67dcf4;
+}
+
+.projects .ai:hover{
+  background-color: #67dcf4;
+  color: white;
+  border: #67dcf4;
+  cursor: text;
+}
+
+.projects .flask {
+  background-color: #f1797f;
+  color: white;
+  border: #f1797f;
+}
+
+.projects .flask:hover{
+  background-color: #f1797f;
+  color: white;
+  border: #f1797f;
+  cursor: text;
+}
+
+.projects .sql {
+  background-color: #ede030;
+  color: white;
+  border: #ede030;
+}
+
+.projects .sql:hover{
+  background-color: #ede030;
+  color: white;
+  border: #ede030;
+  cursor: text;
+}
+
+.projects .aws {
+  background-color: #6a6c2d;
+  color: white;
+  border: #6a6c2d;
+}
+
+.projects .aws:hover{
+  background-color: #6a6c2d;
+  color: white;
+  border: #6a6c2d;
+  cursor: text;
+}
+
+.projects .rest {
+  background-color: #e62177;
+  color: white;
+  border: #e62177;
+}
+
+.projects .rest:hover{
+  background-color: #e62177;
+  color: white;
+  border: #e62177;
+  cursor: text;
+}
+
+.projects .java {
+  background-color: #1ca4a5;
+  color: white;
+  border: #1ca4a5;
+}
+
+.projects .java:hover{
+  background-color: #1ca4a5;
+  color: white;
+  border: #1ca4a5;
+  cursor: text;
+}
+
+.projects .op {
+  background-color: #f1c113;
+  color: white;
+  border: #f1c113;
+}
+
+.projects .op:hover{
+  background-color: #f1c113;
+  color: white;
+  border: #f1c113;
+  cursor: text;
+}
+
+.projects .shaders {
+  background-color: #2e0898;
+  color: white;
+  border: #2e0898;
+}
+
+.projects .shaders:hover{
+  background-color: #2e0898;
+  color: white;
+  border: #2e0898;
+  cursor: text;
+}
+
+.projects .graphics {
+  background-color: #9b18f1;
+  color: white;
+  border: #9b18f1;
+}
+
+.projects .graphics:hover{
+  background-color: #9b18f1;
+  color: white;
+  border: #9b18f1;
+  cursor: text;
+}
+
+.projects .python {
+  background-color: #18b6b6;
+  color: white;
+  border: #18b6b6;
+}
+
+.projects .python:hover{
+  background-color: #18b6b6;
+  color: white;
+  border: #18b6b6;
+  cursor: text;
+}
+
+.projects .cv {
+  background-color: #ee5561;
+  color: white;
+  border: #ee5561;
+}
+
+.projects .cv:hover{
+  background-color: #ee5561;
+  color: white;
+  border: #ee5561;
+  cursor: text;
+}
+
+.projects .ml {
+  background-color: #80009b;
+  color: white;
+  border: #80009b;
+}
+
+.projects .ml:hover{
+  background-color: #80009b;
+  color: white;
+  border: #80009b;
+  cursor: text;
+}
+
+.projects .cnn {
+  background-color: #348161;
+  color: white;
+  border: #348161;
+}
+
+.projects .cnn:hover{
+  background-color: #348161;
+  color: white;
+  border: #348161;
+  cursor: text;
+}
+
+.projects .soc {
+  background-color: #066aed;
+  color: white;
+  border: #066aed;
+}
+
+.projects .soc:hover{
+  background-color: #066aed;
+  color: white;
+  border: #066aed;
+  cursor: text;
+}
+
+.projects .node {
+  background-color: #fbb438;
+  color: white;
+  border: #fbb438;
+}
+
+.projects .node:hover{
+  background-color: #fbb438;
+  color: white;
+  border: #fbb438;
+  cursor: text;
+}
+
+.projects .rf {
+  background-color: #634c82;
+  color: white;
+  border: #634c82;
+}
+
+.projects .rf:hover{
+  background-color: #634c82;
+  color: white;
+  border: #634c82;
+  cursor: text;
+}
+/* ========================================================================= */
+
+/* ============================= Contacts Page ============================= */
+
+.contact {
+  background-color: #0a2035;
+  color: white;
+  position: relative;
+}
+
+.copy {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+  background-color: #000000;
+  width: 100%;
+}
+
+.contact i, .contact a {
+  font-size: 20px;
+}
+
+.contact a{
+  color: #fe7643;
+  padding-left: 15px;
+}
+
+.contact a:hover{
+  color: #ff8f43;
+}
+/* ========================================================================= */
+
+
+/*
+
+.container {
+  padding-top: 50px;
+  background-color: #F0F8FF; 
+  min-width: 100%;
+}
+
+.row {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.italize {
+  font-style: italic;
+}
+
+.con h1 {
+  font-family: headerFont;
+  color: coral;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 40%;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+}
+
+.social li {
+  display: inline;
+  list-style: none;
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.social li a:link{
+  color: #ffffff;
+}
+
+.social li a:hover{
+  color: #d3d3d3;
+}
+*/
